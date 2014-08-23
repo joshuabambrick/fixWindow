@@ -26,6 +26,8 @@
     $.fixWindow = (function () {
         var previousHtmlOverflowY,
             previousBodyMarginRight,
+            scrollBarWidth,
+            $html = $('html'), $body = $('body'),
             getScrollbarWidth = function () {
                 var $outer, widthNoScroll = 100, widthWithScroll;
 
